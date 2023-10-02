@@ -1,0 +1,13 @@
+<p>api works!</p>
+<div fxLayout="row wrap">
+    <!-- <pre>{{upcomingMovies | json}}</pre> -->
+    <div *ngFor="let api of getAPIhere" class="w-96 border-2 m-4 p-4">
+        <div>Name: <strong>{{api.character.name}}</strong></div>
+        <div>Slug: <strong>{{api.character.slug}}</strong></div>
+        <div>Description: <strong>{{api.sentence}} </strong></div>
+      
+       
+        
+    </div>
+</div>
+
